@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cledor끌레도르</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- 리셋 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 베이스서식 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- 모바일 서식 -->
+    <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+  <link rel="stylesheet" href="./css/pc.css" type="text/css">
+
+    <link rel="stylesheet" href="./css/flexslider.css">
+        <!--swiper-->
+        <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+
+
+        <script src="./script/swiper.js"></script>
+     
+
+    <!--  벤더프리픽스 -->
+    <script src="./script/prefixfree.min.js"></script>
+    <!--제이쿼리 소스 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 제이쿼리 플렉스 슬라이드 -->
+    <script src="./script/jquery.flexslider.js"></script>
+   
+<script src="./script/mobile.js"></script>
+
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+    <!-- 헤더영역 -->
+    <header>
+        <div class="header_inner">
+            <h1>
+                <a href="index.html" title="메인페이지로 이동하기">
+                    <img src="./images/logo.png" alt="상단로고">
+                </a>
+            </h1>
+
+            <nav class="gnb">
+                <div><label for="toggle"><i class="fas fa-times"></i></label></div>
+                <ul>
+                    <li><a href="story.html" title="story">STORY</a></li>
+                    <li><a href="product.html" title="product">PRODUCT</a></li>
+                    <li><a href="store.html" title="store">STORE</a></li>
+                    <li><a href="sns.html" title="SNS">SNS</a></li> 
+                </ul>
+            </nav>
+            <label for="toggle" class="toggle_btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </header>
+    <!-- 메인영역 -->
+    <main>
+        <!-- 모바일 슬라이드 -->
+        <article class="slide">
+        <div class="flexslider mslide">
+            <ul class="slides">
+                <li><a href="#" title="slide1">
+                    <img src="./images/m_slide01.jpg" alt="슬라이드01">
+                </a></li>
+                <li><a href="#" title="slide2">
+                    <img src="./images/m_slide02.jpg" alt="슬라이드02">
+                </a></li>
+            </ul>
+        </div>
+
+      <article class="slide">
+        <div class="flexslider pcslide">
+          <ul class="slides">
+              <li><a href="#" title="slide1">
+                  <img src="./images/slide01-1.jpg" alt="슬라이드01">
+              </a></li>
+              <li><a href="#" title="slide2">
+                  <img src="./images/slide02-1.jpg" alt="슬라이드02">
+              </a></li>
+          </ul>
+      </div>
+    </article>
+
+
+    </article>
+
+  
+
+<!-- 모바일 제품슬라이드 -->
+<article class="recom_wrap">
+<div class="bg_color01">
+<h2 class="recom">추천상품</h2>
+<div class="swiper-container productslide">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><a href="#" title="">
+        <p>CUP</p>
+        <br>
+        <img src="./images/product01.png" alt=""></a>
+        <p class="pr_title">끌레도르<br>
+          초코 컵</p>
+          <p class="pr_txt">부드럽고 진한 초코맛과 쫀득한 질감의 <br>초코컵을 맛보세요</p>
+      </div>
+      <div class="swiper-slide"> <a href="#" title="">
+        <p>PINT</p>
+        <br>
+        <img src="./images/product04.png" /></a>
+      <p class="pr_title">끌레도르<br>
+        더블쿠키 페스티벌</p>
+      <p class="pr_txt">아낌없이 들어간 오레오 쿠키와 버터쿠키의
+        환상적인 조화를 맛보세요</p>
+      </div>
+      <div class="swiper-slide"><a href="#" title="">
+        <p>BAR</p>
+        <br>
+        <img src="./images/product16.png" class="bar"/></a>
+      <p class="pr_title"> 끌레도르 <br>카톤바 청정제주녹차 </p>
+      <p class="pr_txt">두꺼운 초코코팅과 제주만의 청정녹차의 조화를 느껴보세요</p>
+      </div>
+        <div class="swiper-slide"><a href="#" title="">
+          <p>PARFAIT</p>
+          <br>
+          <img src="./images/product08.png" class="parfait"/></a>
+          <p class="pr_title">끌레도르<br>파르페 체리블라썸</p>
+          <p class="pr_txt">달달한 체리 아이스크림과 새콤한 체리<br>샤베트의 만남을 느껴보세요</p>
+        </div>
+    </div>
+
+
+  
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+
+  </div>
+</div>
+<!-- pc, tablet 제품슬라이드 -->
+    <div class="flexslider pcthumb">
+      <ul class="slides">
+        <li data-thumb="./images/product01.png">
+          <img src="./images/product01.png" />
+         
+        </li>
+        <li data-thumb="./images/product04.png">
+          <img src="./images/product04.png" />
+          
+        </li>
+        <li data-thumb="./images/product16.png">
+          <img src="./images/product16.png" />
+         
+        </li>
+        <li data-thumb="./images/product08.png">
+          <img src="./images/product08.png" />
+         
+        </li>
+      </ul>
+
+    </div>
+
+<ul class="txt_wrap">
+  <li>
+    <p class="type">CUP</p>
+    <p class="pr_title">끌레도르<br>
+      초코 컵</p>
+      <p class="pr_txt">부드럽고 진한 초코맛과 쫀득한 질감의 <br>초코컵을 맛보세요</p>
+  </li>
+  <!-- <li>
+    <p class="type">PINT</p>
+    <p class="pr_title">끌레도르<br>
+      더블쿠키 페스티벌</p>
+    <p class="pr_txt">아낌없이 들어간 오레오 쿠키와 버터쿠키의
+      환상적인 조화를 맛보세요</p>
+  </li>
+  <li>
+    <p class="type">BAR</p>
+    <p class="pr_title">끌레도르 <br>카톤바 청정제주녹차</p>
+        <p class="pr_txt">두꺼운 초코코팅과 제주만의 청정녹차의 조화를 느껴보세요</p>
+  </li>
+  <li>
+    <p class="type">PARFAIT</p>
+    <p class="pr_title">끌레도르 <br>파르페 체리블라썸</p>
+    <p class="pr_txt">달달한 체리 아이스크림과 새콤한 체리<br>샤베트의 만남을 느껴보세요</p>
+  </li> -->
+</ul>
+
+    <div class="buy_btn"><a href="buy.html">구매하기</a></div>
+
+
+
+
+   
+
+      
+   
+        
+
+     
+  </article>
+
+
+
+
+
+    
+
+ 
+
+    <article>
+
+      <h2 class="pro_title">PRODUCT</h2>
+      <ul class="product_01">
+        <li onclick="document.getElementById('m_bar').src='./images/mobile_bar .jpg'" class="btn">
+          <a class="btn">BAR</a>
+        </li>
+        <li onclick="document.getElementById('m_bar').src='./images/mobile_pint.jpg'" class="btn">
+          <a>PINT</a>
+        </li>
+        <li onclick="document.getElementById('m_bar').src='./images/mobile_parfait.jpg'"  class="btn">
+          <a>PARFAIT</a>
+        </li>
+      </ul>
+      
+      <div id="m_bar"></div>
+    
+      
+      
+      
+
+      <div class="swiper-container productslide02" id="pro_slide01">
+
+        <div class="swiper-wrapper">
+    
+          <div class="swiper-slide"><a href="#" title="">
+           
+         
+            <img src="./images/product10.jpg" alt=""></a></div>
+          <div class="swiper-slide"> <a href="#" title="">
+           
+            
+            <img src="./images/product11.jpg" /></a></div>
+          <div class="swiper-slide"><a href="#" title="">
+           
+        <img src="./images/product12.jpg" ></a></div>
+        <div class="swiper-slide"><a href="#" title="">
+             
+        <img src="./images/product13.jpg" ></a></div>
+
+        <div class="swiper-slide"><a href="#" title="">
+             
+        <img src="./images/product14.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#" title="">
+             
+        <img src="./images/product15.jpg" /></a></div>
+        <div class="swiper-slide"><a href="#" title="">
+             
+        <img src="./images/product16.jpg" /></a></div>
+        
+        </div>
+        
+    </div>
+    
+      
+      
+
+
+
+
+    <!-- <div class="swiper-container productslide02" id="pro_slide02">
+
+      <div class="swiper-wrapper">
+  
+        <div class="swiper-slide"><a href="#" title="">
+         
+       
+          <img src="./images/product01.png" alt=""></a></div>
+        <div class="swiper-slide"> <a href="#" title="">
+         
+          
+          <img src="./images/product02.png" /></a></div>
+        <div class="swiper-slide"><a href="#" title="">
+         
+      <img src="./images/product03.png" ></a></div>
+      <div class="swiper-slide"><a href="#" title="">
+           
+      <img src="./images/product04.png" ></a></div>
+
+      <div class="swiper-slide"><a href="#" title="">
+           
+      <img src="./images/product05.png" /></a></div>
+      <div class="swiper-slide"><a href="#" title="">
+           
+      <img src="./images/product06.png" /></a></div>
+      <div class="swiper-slide"><a href="#" title="">
+           
+
+      
+      </div>
+      
+  </div>
+  
+</div> -->
+
+
+
+
+
+  <!-- <div class="swiper-container productslide02" id="pro_slide03">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide"><a href="#" title="">
+       
+     
+        <img src="./images/product07.jpg" alt=""></a></div>
+      <div class="swiper-slide"> <a href="#" title="">
+       
+        
+        <img src="./images/product08.png" /></a></div>
+      <div class="swiper-slide"><a href="#" title="">
+       
+    <img src="./images/product09.jpg" ></a></div>
+    
+         
+
+    
+    </div>
+    
+</div>
+
+ -->
+
+
+
+ <!-- pc제품슬라이드 -->
+
+
+
+
+
+
+ <div class="swiper-container productslide03" id="pro_slide01">
+
+  <div class="swiper-wrapper">
+
+    <div class="swiper-slide"><a href="#" title="">
+     
+   
+      <img src="./images/product10.jpg" alt=""></a></div>
+    <div class="swiper-slide"> <a href="#" title="">
+     
+      
+      <img src="./images/product11.jpg" /></a></div>
+    <div class="swiper-slide"><a href="#" title="">
+     
+  <img src="./images/product12.jpg" ></a></div>
+  <div class="swiper-slide"><a href="#" title="">
+       
+  <img src="./images/product13.jpg" ></a></div>
+
+  <div class="swiper-slide"><a href="#" title="">
+       
+  <img src="./images/product14.jpg" /></a></div>
+  <div class="swiper-slide"><a href="#" title="">
+       
+  <img src="./images/product15.jpg" /></a></div>
+  <div class="swiper-slide"><a href="#" title="">
+       
+  <img src="./images/product16.jpg" /></a></div>
+  
+  </div>
+  
+</div>
+
+
+
+
+
+
+<!-- 
+<div class="swiper-container productslide03" id="pro_slide03">
+
+<div class="swiper-wrapper">
+
+  <div class="swiper-slide"><a href="#" title="">
+   
+ 
+    <img src="./images/product01.png" alt=""></a></div>
+  <div class="swiper-slide"> <a href="#" title="">
+   
+    
+    <img src="./images/product02.png" /></a></div>
+  <div class="swiper-slide"><a href="#" title="">
+   
+<img src="./images/product03.png" ></a></div>
+<div class="swiper-slide"><a href="#" title="">
+     
+<img src="./images/product04.png" ></a></div>
+
+<div class="swiper-slide"><a href="#" title="">
+     
+<img src="./images/product05.png" /></a></div>
+<div class="swiper-slide"><a href="#" title="">
+     
+<img src="./images/product06.png" /></a></div>
+<div class="swiper-slide"><a href="#" title="">
+     
+
+
+</div>
+
+</div>
+
+</div> 
+
+
+
+
+
+
+
+ <div class="swiper-container productslide03" id="pro_slide02">
+
+<div class="swiper-wrapper">
+
+<div class="swiper-slide"><a href="#" title="">
+ 
+
+  <img src="./images/product07.jpg" alt=""></a></div>
+<div class="swiper-slide"> <a href="#" title="">
+ 
+  
+  <img src="./images/product08.png" /></a></div>
+<div class="swiper-slide"><a href="#" title="">
+ 
+<img src="./images/product09.jpg" ></a></div>
+
+   
+
+
+</div>
+
+</div> -->
+
+
+
+
+
+
+<!-- pc슬라이드 끝 -->
+
+
+
+
+      </article>
+
+
+      <article class="con_wrap">
+        <div class="video_wrap">
+
+          
+
+          <div class="mini_wrap">
+          <div class="tx01">
+          <p class="video_title">Queen is Back</p>
+          <p class="video_text">새롭게돌아왔지, <br>끌레도르 X 김태희 FULL ver.</p>
+        </div>
+        <div class="tx02">
+            <p class="video_text02">아이스크림의 여왕 끌레도르가 <br>CF계의 여왕 김태희를 만나<br> 끌릴 수밖에 없는 광고를 찍었으니, 빨리 차에 타서 플레이 해봐!</p>
+        </div> 
+
+        
+
+        </div>
+        <a href="https://www.youtube.com/watch?v=RGbpggsTGZc"><img src="./images/video01.jpg" alt="video"></a>
+      </div>
+
+
+
+
+
+
+      </article>
+      <article class="con_wrap02">
+
+        <div class="story_bg">
+        <img src="./images/story.png" alt="story">
+        
+          <ul>
+            <li><img src="./images/story01.png" alt=""><div><p>끌레도르는 유화제, 증점제,<br>
+              합성향료를 빼고 100% 국내산 <br>원유와 유크림을 사용했습니다.</p></div></li>
+            <li><img src="./images/story02.png" alt=""><div><p>176년의 노하우가 담긴<br>
+              초콜릿을 더해 
+              부드럽게 녹아드는 <br>초콜릿의 조화를 느낄 수 있어요.</p></div></li>
+            <li><img src="./images/story03.png" alt=""><div><p>건강한 카카오 열매에서<br>
+              추출한 초콜릿은 카카오 함량을 <br>
+              높여 더 두껍고 진해졌습니다.</p></div>
+              </li>
+          </ul>
+        </div>
+      </article>
+      
+      <article class="instagram">
+
+        
+ 
+ <div class="insta_title">
+      <i class="fa-sharp fa-solid fa-hashtag"></i>
+      <h2>끌레도르</h2>
+    </div>
+        <div class="grid">
+          <div class="item"><a href="instagram.com"><img src="./images/instagram05.jpg" alt=""></a></div>
+          <div class="item"><a href="instagram.com"><img src="./images/instagram03.jpg" alt=""></a></div>
+          <div class="item"><a href="instagram.com"><img src="./images/instagram04.jpg" alt=""></a></div>
+          <div class="item"><a href="instagram.com"><img src="./images/instagram.jpg" alt=""></a></div>
+          <div class="item"><a href="instagram.com"><img src="./images/instagram02.jpg" alt=""></a></div>
+        </div>
+
+      </article>
+    </main>
+
+
+    <!-- 푸터영역 -->
+    <footer>
+<div>
+      <nav class="nav1">
+        <ul>
+          <li><a href="call.html" title="고객센터">고객센터</a></li>
+          <li><a href="rule.html" title="이용약관">이용약관</a></li>
+          <li><a href="data.html" title="개인정보취급방침">개인정보취급방침</a></li>
+
+        </ul>
+      </nav>
+  <nav class="nav2">
+    <ul>
+      <li><a href="instgram.com" title="인스타그램">
+        <i class="fa-brands fa-instagram"></i></a></li>
+      <li><a href="facebook.com" title="페이스북"><i class="fa-brands fa-facebook"></i></a></li>
+    </ul>
+  </nav>
+<nav>
+  <a href="#"><img src="./images/logo.png" alt=""></a>
+</nav>
+  <address>
+    <div class="adr1">
+    <p>(주)빙그레</p>
+    <p>주소 :서울특별시 중구 서소문로 11길 19
+
+      통신판매업신고번호 :다산-0172
+      웨스트윙
+      </p>
+    </div>
+    <div class="adr2">
+      <p>웨스트윙</p>
+      <p>대표 :최순흠
+        주소 :경상북도 영천시 올밤길 50
+        통신판매업신고번호 :2017-경북영천-0027
+        이메일 :info@westwing.kr
+        고객센터
+        TEL. 070-7760-0171
+         
+        Copyright (주)빙그레 All rights reserved.     </p>
+      </div>
+  </address>
+</div>
+    </footer>
+  
+
+
+
+    <script>
+
+    
+
+
+        // Can also be used with $(document).ready()
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails"
+  });
+});
+            </script>
+            <script>
+                    // Can also be used with $(document).ready()
+        $(window).load(function() {
+          $('.flexslider').flexslider({
+            animation: "slide"/*fade*/
+          });
+        });
+
+            </script>
+            <script>
+       new Swiper('.productslide', {
+	navigation : {
+		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+	},
+});
+            </script>
+   
+   <script>
+    var swiper = new Swiper(".productslide02", {
+       spaceBetween: 20,//슬라이드 사이여백
+       centeredSlides: false,//슬라이드 가운데정렬 <->false
+     
+       breakpoints:{
+            320:{
+                slidesPerView:2.4,
+            },
+            768:{slidesPerView:5,
+            },
+           
+        }
+     });
+</script>
+<script>
+  var swiper = new Swiper(".productslide03", {
+     spaceBetween:10,//슬라이드 사이여백
+     centeredSlides: false,//슬라이드 가운데정렬 <->false
+ 
+     breakpoints:{
+         
+          768:{slidesPerView:3.3 ,
+          },
+         
+      }
+   });
+</script>
+
+</body>
+</html>
